@@ -98,7 +98,7 @@ body{
 }
 .nav-link:hover,
 .nav-link.active{
-    color: var(--black-color);
+    color: var(--main-color);
 }
 /* end navbar */
 
@@ -167,4 +167,45 @@ body{
     justify-content: center;
     align-items: center;
     padding: 50px;
+}
+.contact-data{
+    margin: 50px 0;
+}
+.contact-data p{
+    opacity: 50%;
+    margin-bottom: 0;
+}
+.contact-data a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.form-control,
+.form-select{
+    background-color: transparent;
+    border-radius: inherit;
+    border-bottom: 1px solid #FFFFFF33 !important;
+    border: none;
+    color: #8C8C8C;
+}
+.social-media{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    border: 1px solid #474747;
+    background-color: #0F0F0F;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+.link-footer{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
 }
