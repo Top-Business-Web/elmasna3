@@ -23,12 +23,13 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <div class="line"></div>
         <!-- <div class="loader">
         <img src="image/load.gif">
     </div> -->
         <div class="landing">
             <!-- nav bar -->
-             <nav class="navbar navbar-expand-lg d-lg-none d-block">
+            <nav class="navbar navbar-expand-lg d-lg-none d-block">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <img
@@ -84,19 +85,19 @@
             <nav class="navbar navbar-expand-lg d-none d-lg-block">
                 <div class="container">
                     <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link p-lg-3"
-                                    href="service.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-lg-3"
-                                    href="event.html">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-lg-3"
-                                    href="artist.html">Artists</a>
-                            </li>
-                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3"
+                                href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3"
+                                href="event.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3"
+                                href="artist.html">Artists</a>
+                        </li>
+                    </ul>
                     <a class="navbar-brand" href="index.html">
                         <img
                             src="image/logo.png"
@@ -105,58 +106,109 @@
                             style="height: 60px" />
                     </a>
                     <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link p-lg-3"
-                                    aria-current="page"
-                                    href="involved.html">Get involved</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-lg-3"
-                                    href="about.html">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link p-lg-3" href="space.html">The
-                                    space</a>
-                            </li>
-                        </ul>
-                   
+                        <li class="nav-item">
+                            <a
+                                class="nav-link p-lg-3"
+                                aria-current="page"
+                                href="involved.html">Get involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3"
+                                href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3" href="space.html">The
+                                space</a>
+                        </li>
+                    </ul>
+
                 </div>
             </nav>
-            <!-- landing -->
-            <div
-                class="container"
-                style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        ">
-                <div class="row">
-                    <div class="col-lg-2 col-12"></div>
-                    <div class="col-lg-8 col-12">
-                        <div class="heading text-center">
-                            <h1 class="color-red-banner">
-                                هنا يلتقي الناس وتتقاطع التجارب، وتتكوّن القصص
-                            </h1>
-                            <h3 class="color-white-banner">
-                                A place where people meet, stories are shaped,
-                                and experiences
-                                collide.
-                            </h3>
-                            <button class="custom-btn">
-                                <span>SEE ALL EVENTS</span>
-                            </button>
+            <div class="slider">
+                <div id="carouselExampleCaptions" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/banner1.png" class="d-block w-100"
+                                alt="no-image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="heading text-center">
+                                    <h1 class="color-red-banner">
+                                        هنا يلتقي الناس وتتقاطع التجارب، وتتكوّن
+                                        القصص
+                                    </h1>
+                                    <h3 class="color-white-banner">
+                                        A place where people meet, stories are
+                                        shaped,
+                                        and experiences
+                                        collide.
+                                    </h3>
+                                    <button class="custom-btn">
+                                        <span>SEE ALL EVENTS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/banner3.png" class="d-block w-100"
+                                alt="no-image">
+                            <div class="carousel-caption">
+                                <div class="heading text-center">
+                                    <h1 class="color-red-banner">
+                                        مجتمع يدعمك…
+                                        <br>
+                                        ومساحة تنتمي لها
+                                    </h1>
+                                    <h3 class="color-white-banner">
+                                        A community that lifts you… be part of
+                                        the movement
+                                    </h3>
+                                    <button class="custom-btn">
+                                        <span>SEE ALL EVENTS</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/banner2.png" class="d-block w-100"
+                                alt="no-image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="heading text-center">
+                                    <h1 class="color-red-banner">
+                                        شراكات تصنع تأثيرًا…
+                                        وتجارب تبقى
+                                    </h1>
+                                    <h3 class="color-white-banner">
+                                        Partnerships that create impact… Let’s
+                                        build something together
+                                    </h3>
+                                    <button class="custom-btn">
+                                        <span>SEE ALL EVENTS</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-12"></div>
                 </div>
             </div>
         </div>
 
         <!-- about -->
 
-        <div class="about wow bounceInUp" data-wow-duration="2s"
+        <div class="about padding-100 wow bounceInUp" data-wow-duration="2s"
             data-wow-offset="200">
             <div class="container">
                 <div class="row">
@@ -170,10 +222,14 @@
                         class="col-lg-6 col-12 d-flex flex-column justify-content-center">
                         <div>
                             <h1 class="color-red title-about-ar">
-                                بيـن عمّــان القديمـة والحديثــة - بيــــتٌ للفـــــــــــــــــــــــــــــــــــــن والموسيقــــــــــــــــــــــــــــــــــــــــــــــى والتعبيـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــر 
+                                بيـن عمّــان القديمـة والحديثــة - بيــــتٌ
+                                للفـــــــــــــــــــــــــــــــــــــن
+                                والموسيقــــــــــــــــــــــــــــــــــــــــــــــى
+                                والتعبيـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــر
                             </h1>
                             <h3 class="text-white title-about-en">
-                                Between Old Amman and the New - a home for art, music, and expression
+                                Between Old Amman and the New - a home for art,
+                                music, and expression
                             </h3>
                         </div>
                     </div>
@@ -185,7 +241,7 @@
 
         <div class="event padding-100">
             <div class="container">
-                <div class="main-title wow fadeIn wow fadeIn"
+                <div class="main-title wow fadeIn"
                     data-wow-duration="1s" data-wow-offset="200">
                     <h1 class="color-red text-center">
                         الأحـــــــداث القــــــــــادمة
@@ -203,7 +259,8 @@
                                 alt="Event 1"
                                 class="img-fluid"
                                 style="height: 400px; width: 100%; border-radius: 10px" />
-                            <h4 class="color-red title-ar mt-4">ليــــــالي الشفــــق</h4>
+                            <h4 class="color-red title-ar mt-4">ليــــــالي
+                                الشفــــق</h4>
                             <h4 class="text-white title-en">AURORA NIGHTS</h4>
                             <div class="data-event">
                                 <ul>
@@ -238,7 +295,8 @@
                                 alt="Event 1"
                                 class="img-fluid"
                                 style="height: 400px; width: 100%; border-radius: 10px" />
-                            <h4 class="color-red title-ar mt-4">ليــــــالي الشفــــق</h4>
+                            <h4 class="color-red title-ar mt-4">ليــــــالي
+                                الشفــــق</h4>
                             <h4 class="text-white title-en">AURORA NIGHTS</h4>
                             <div class="data-event">
                                 <ul>
@@ -273,7 +331,8 @@
                                 alt="Event 1"
                                 class="img-fluid"
                                 style="height: 400px; width: 100%; border-radius: 10px" />
-                            <h4 class="color-red title-ar mt-4">ليــــــالي الشفــــق</h4>
+                            <h4 class="color-red title-ar mt-4">ليــــــالي
+                                الشفــــق</h4>
                             <h4 class="text-white title-en">AURORA NIGHTS</h4>
                             <div class="data-event">
                                 <ul>
@@ -310,7 +369,7 @@
 
         <!-- artist -->
 
-        <div>
+        <div class="artist-section">
             <div class="container">
                 <div class="main-title wow fadeIn mb-5" data-wow-duration="1s"
                     data-wow-offset="200">
@@ -361,11 +420,12 @@
         </div>
 
         <!-- get involved -->
-        <div class="padding-100">
+        <div class="padding-100 involved-section">
             <div class="container-fluid">
                 <div class="main-title wow fadeIn mb-5" data-wow-duration="1s"
                     data-wow-offset="200">
-                    <h1 class="color-red text-center">انضم الينـــــــــــــــــــــــــــا</h1>
+                    <h1 class="color-red text-center">انضم
+                        الينـــــــــــــــــــــــــــا</h1>
                     <h3 class="text-center text-white">Get Involved</h3>
                 </div>
                 <div class="bg-involved">
@@ -430,7 +490,8 @@
                         <img src="image/ser2.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Music &
+                        <h6 class="text-center text-white mt-3 font-card">Music
+                            &
                             singing</h6>
                     </div>
                     <div
@@ -439,7 +500,8 @@
                         <img src="image/ser3.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Dance</h6>
+                        <h6
+                            class="text-center text-white mt-3 font-card">Dance</h6>
                     </div>
                     <div
                         class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 wow bounceInUp"
@@ -448,7 +510,8 @@
                         <img src="image/ser4.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Visual art &
+                        <h6 class="text-center text-white mt-3 font-card">Visual
+                            art &
                             installations</h6>
                     </div>
                     <div
@@ -457,7 +520,9 @@
                         <img src="image/ser5.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Galleries &
+                        <h6
+                            class="text-center text-white mt-3 font-card">Galleries
+                            &
                             curators</h6>
                     </div>
                     <div
@@ -467,7 +532,9 @@
                         <img src="image/ser6.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Handcraft &
+                        <h6
+                            class="text-center text-white mt-3 font-card">Handcraft
+                            &
                             design</h6>
                     </div>
                     <div
@@ -476,7 +543,8 @@
                         <img src="image/ser7.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Workshops</h6>
+                        <h6
+                            class="text-center text-white mt-3 font-card">Workshops</h6>
                     </div>
                     <div
                         class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 wow bounceInUp"
@@ -485,7 +553,9 @@
                         <img src="image/ser8.png" alt="Artist 1"
                             class="img-fluid"
                             style="height: 250px; width: 100%;" />
-                        <h6 class="text-center text-white mt-3 font-card">Promoters &
+                        <h6
+                            class="text-center text-white mt-3 font-card">Promoters
+                            &
                             organizers</h6>
                     </div>
                 </div>
@@ -493,12 +563,13 @@
         </div>
 
         <!-- project -->
-        <div class="padding-100">
+        <div class="padding-100 project-section">
             <div class="container">
                 <div class="main-title wow fadeIn mb-5" data-wow-duration="1s"
                     data-wow-offset="200">
                     <h1 class="color-red text-center">
-                        كـــــل ما هـــــــو جديـــــــــــد في المصنـــــــــــــــــــــــــــــــــع
+                        كـــــل ما هـــــــو جديـــــــــــد في
+                        المصنـــــــــــــــــــــــــــــــــع
                     </h1>
                     <h3 class="text-center text-white">
                         All What’s new at masnaa el fan
@@ -615,12 +686,12 @@
 
         <!-- contact us -->
 
-        <div class="padding-100">
+        <div class="padding-100 contact-section">
             <div class="container">
                 <div class="main-title wow fadeIn mb-5" data-wow-duration="1s"
                     data-wow-offset="200">
                     <h1 class="color-red text-center">
-                         تواصــــل معنــــــــا
+                        تواصــــل معنــــــــا
                     </h1>
                     <h3 class="text-center text-white">
                         Contact us
@@ -630,13 +701,14 @@
                     data-wow-offset="200">
                     <div class="col-lg-2 col-12"></div>
                     <div class="col-lg-8 col-12">
-                        <p class="text-white p-contact" style="margin-top: 50px;">
+                        <p class="text-white p-contact"
+                            style="margin-top: 50px;">
                             Send us your business request and let us know how
                             you’d like to collaborate with us. We will review it
                             and get back to you shortly.
                         </p>
                         <div class="row">
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-7 col-12">
                                 <div class="contact-data">
                                     <p class="text-white">Email</p>
                                     <a
@@ -678,7 +750,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-5 col-12">
                                 <form class="row g-3" style="margin-top: 30px;">
                                     <div class="col-md-6 col-12">
                                         <input type="text" class="form-control"
