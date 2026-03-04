@@ -36,21 +36,18 @@
 body {
   font-family: AvenirNext;
   background-color: var(--black-color);
-  
 }
-.font-ar{
+.font-ar {
   font-family: Thuluth;
-font-weight: 400;
-font-size: 31px;
-
+  font-weight: 400;
+  font-size: 31px;
 }
-.font-en{
+.font-en {
   font-family: STIXTwoText;
-font-weight: 400;
-font-style: Italic;
-font-size: 23px;
-text-transform: uppercase;
-
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 23px;
+  text-transform: uppercase;
 }
 .title {
   text-transform: uppercase;
@@ -82,12 +79,25 @@ text-transform: uppercase;
 /* landing */
 .landing {
   width: 100%;
-  height: 100vh;
-  background-image:
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-    url("../image/banner.jpg");
-  background-size: cover;
-  background-position: center;
+  height: 850px;
+  position: relative;
+  z-index: -3;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.carousel {
+  height: 850px;
+}
+.carousel-item img {
+  height: 850px;
+  object-fit: cover;
+}
+.carousel-caption {
+  bottom: 25%;
 }
 
 /* start scroll to top */
@@ -226,9 +236,22 @@ text-transform: uppercase;
   text-align: center;
   text-transform: uppercase;
 }
+.list-about li .title-about {
+  font-family: Thuluth;
+  font-weight: 400;
+  font-size: 18px;
+}
+.list-about li p {
+  font-family: STIXTwoText;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
 .main-title {
   margin-bottom: 80px;
+  position: relative;
 }
 .main-title h1 {
   font-family: Thuluth;
@@ -297,6 +320,7 @@ text-transform: uppercase;
   justify-content: center;
   align-items: center;
   padding: 50px;
+  /* z-index: 99999; */
 }
 .bg-involved .title-en {
   font-family: AvenirNext;
@@ -334,8 +358,8 @@ text-transform: uppercase;
   color: white;
   font-weight: bold;
 }
-.p-contact{
-    font-family: AvenirNext;
+.p-contact {
+  font-family: AvenirNext;
 }
 .form-control,
 .form-select {
@@ -461,7 +485,6 @@ text-transform: uppercase;
   padding: 16px 60px;
   margin-top: 30px;
   transition: all 0.5s ease;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 107%;
@@ -522,4 +545,143 @@ text-transform: uppercase;
   left: 0px;
   border-left: none;
   border-bottom: none;
+}
+
+.custom-btn2 {
+  background-color: var(--black-color);
+  color: white;
+  position: relative;
+  border: none;
+  padding: 16px 60px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 107%;
+  letter-spacing: -7%;
+  text-transform: uppercase;
+}
+
+/* Corner decorations */
+.custom-btn2::before,
+.custom-btn2::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+}
+
+/* Top Left */
+.custom-btn2::before {
+  top: 0px;
+  left: 0px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Bottom Right */
+.custom-btn2::after {
+  bottom: 0px;
+  right: 0px;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* Extra corners using span */
+.custom-btn2 span::before,
+.custom-btn2 span::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+}
+
+.custom-btn2 span::before {
+  top: 0px;
+  right: 0px;
+  border-right: none;
+  border-top: none;
+}
+
+.custom-btn2 span::after {
+  bottom: 0px;
+  left: 0px;
+  border-left: none;
+  border-bottom: none;
+}
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  background-color: transparent;
+  border: 1px solid #ffffff26;
+  z-index: -1;
+}
+body::after {
+  content: "";
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  background-color: transparent;
+  border: 1px solid #ffffff26;
+  z-index: -1;
+}
+.line {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff26;
+  z-index: -1;
+}
+ .main-title::before {
+  content: "";
+  width: 456px;
+  height: 1px;
+  position: absolute;
+  top: 54%;
+  left: -90px;
+  background-color: #ffffff26;
+}
+.main-title::after {
+  content: "";
+  width: 456px;
+  height: 1px;
+  position: absolute;
+  top: 54%;
+  right: -90px;
+  background-color: #ffffff26;
+}
+.involved-section .main-title::before{
+  left: 15px;
+  width: 500px;
+}
+.involved-section .main-title::after{
+  right: 15px;
+  width: 500px;
+}
+.artist-section .main-title::after,
+.artist-section .main-title::before{
+  width: 420px;
+}
+.project-section .main-title::after,
+.project-section .main-title::before{
+  width: 285px;
+}
+.contact-section .main-title::after,
+.contact-section .main-title::before{
+  width: 520px;
 }
