@@ -55,7 +55,7 @@ body {
 }
 .font-card {
   font-family: AvenirNext;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 .padding-100 {
@@ -88,13 +88,14 @@ body {
   width: 100%;
   height: 850px;
   position: relative;
-  z-index: -3;
 }
 .slider {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -3;
+
 }
 .carousel {
   height: 850px;
@@ -643,11 +644,43 @@ line-height: normal;
 .title-event{
     width: 700px;
     position: absolute;
-    left: 21%;
+    left: 23.5%;
     top: 42%;
 
 }
-
+.modal .form-control,
+.modal .form-select {
+  background-color: transparent;
+  border-radius: inherit;
+  border-bottom: 1px solid #00000033 !important;
+  border: none;
+  color: #898989;
+  margin-bottom: 10px;
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none !important;
+}
+.bg-comming-soon{
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%), url("../image/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-comming-soon .main-title::after,
+.bg-comming-soon .main-title::before{
+  display: none;
+}
+.start-soon.vector::before,
+.start-soon.vector::after {
+  z-index: 1;
+}
+.start-soon .line{
+  z-index: 1;
+}
 
 /* draw vector */
 
@@ -717,6 +750,12 @@ line-height: normal;
 .artist-section .main-title::before{
   width: 420px;
 }
+.service .main-title::before{
+  left: 15px;
+}
+.service .main-title::after{
+  right: 15px;
+}
 .project-section .main-title::after,
 .project-section .main-title::before{
   width: 285px;
@@ -727,7 +766,7 @@ line-height: normal;
 }
 .image-vector{
   position: absolute;
-left: 181px;
+left: 230px;
 bottom: 0;
 }
 
