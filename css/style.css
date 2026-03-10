@@ -30,7 +30,7 @@
 }
 @font-face {
   font-family: AvenirNext;
-  src: url("../fonts/Eng/SecondaryFont/AvenirNext.ttc");
+  src: url("../fonts/Eng/SecondaryFont/Avenir.ttc");
 }
 
 body {
@@ -55,7 +55,7 @@ body {
   color: white;
 }
 .font-card {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 15px;
   text-align: center;
 }
@@ -79,7 +79,7 @@ body {
 
 /* landing */
 .landing-event-details {
-  background-image: url("../image/banner1.png");
+  background-image: url("../image/Frame120.png");
   background-size: cover;
   background-position: center;
   height: 1000px;
@@ -152,7 +152,7 @@ body {
 }
 .nav-link {
   color: white;
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-weight: normal;
   font-size: 14px;
   font-weight: 400;
@@ -268,6 +268,7 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
+  margin-bottom: -10px;
 }
 .main-title h3 {
   font-family: STIXTwoText;
@@ -294,15 +295,15 @@ body {
   letter-spacing: 0%;
 }
 .card-event .title-en {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-weight: normal;
 }
 .title-artist {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 24px;
 }
 .pargraph-artist {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-weight: 500;
   text-align: center;
 }
@@ -331,7 +332,7 @@ body {
   /* z-index: 99999; */
 }
 .bg-involved .title-en {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 20px;
 }
 .bg-involved .title-ar {
@@ -351,7 +352,7 @@ body {
 }
 
 .p-project {
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 14px;
 }
 .contact-data {
@@ -629,7 +630,7 @@ body {
 .title-event h1 {
   color: #fff;
   text-align: center;
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 42px;
   font-style: italic;
   font-weight: 400;
@@ -639,7 +640,7 @@ body {
 .title-event p {
   color: #fff;
   text-align: center;
-  font-family: AvenirNext;
+  font-family: Avenir;
   font-size: 16px;
   font-style: italic;
   /* font-weight: 400; */
@@ -648,7 +649,7 @@ body {
 .bg-event-details {
   background-image: url("../image/Vector.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -732,6 +733,21 @@ body {
   line-height: normal;
   margin-bottom: 0;
 }
+.content-event{
+padding: 200px 0;
+background-color: #0E0E0E;
+}
+.content-event .content{
+  color: rgba(255, 255, 255, 0.10);
+font-family: AvenirNext;
+font-size: 80px;
+font-weight: 700;
+line-height: 107%; /* 85.6px */
+letter-spacing: -5.6px;
+text-transform: uppercase;
+text-align: center;
+}
+
 /* draw vector */
 
 .vector {
@@ -789,12 +805,12 @@ body {
   background-color: #ffffff26;
 }
 .involved-section .main-title::before,
-.event .main-title::before {
+.event2 .main-title::before {
   left: 15px;
   width: 500px;
 }
 .involved-section .main-title::after,
-.event .main-title::after {
+.event2 .main-title::after {
   right: 15px;
   width: 500px;
 }
@@ -820,6 +836,65 @@ body {
   position: absolute;
   left: 230px;
   bottom: 0;
+}
+.vector-join{
+  position: relative;
+}
+.vector-join .vector1{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vector-join .vector2{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.vector-join .vector3{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.vector-join .vector4{
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 24.5%;
+}
+.vector-join .vector5{
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 41.5%;
+}
+.vector-join .vector6{
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 58.5%;
+}
+.vector-join .vector7{
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 75.5%;
 }
 
 @media (max-width: 992px) {
