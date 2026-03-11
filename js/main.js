@@ -13,53 +13,6 @@ $(function (){
          }
      });
 
-    //  head landing
-
-     var typed = new Typed('.type', {
-        strings: [
-            'Flutter Developer', 
-            'Android Developer'
-        ],
-        typeSpeed: 0,
-        backSpeed: 0,
-        loop: true
-      });
-
-        // work list
-
-$('.work-list li').click(function (){
-
-    $(this).addClass('active').siblings().removeClass("active");
-
-    $('.work .row > div').hide();
-
-    $($(this).data('list')).fadeIn();
-});
-
-// work popup image
-
-$('.view').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile',
-    image: {
-        verticalFit: true
-    }
-    
-});
-
-// Testimonials carousel
-
-$(".Testim .owl-carousel").owlCarousel({
-    autoplay: true,
-    autoplayhoverpause: true,
-    autoplaytimeout: 100,
-    items: 1,
-    nav: true,
-    loop: true,
-    dots: false,
-});
-
 // scroll to top
 
 $(window).scroll(function () {
