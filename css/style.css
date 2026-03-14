@@ -333,12 +333,12 @@ body {
 }
 .bg-involved .title-en {
   font-family: Avenir;
-  font-size: 20px;
+  font-size: 15px;
 }
 .bg-involved .title-ar {
   font-family: Tahoma;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   text-align: right;
 }
 .bg-involved .title {
@@ -793,16 +793,16 @@ text-transform: uppercase;
   background-color: var(--black-color);
 }
 .num-ticket {
-  border-radius: 24px;
+  border-radius: 15px;
   border: 1px solid #fff;
   background: #000;
   display: flex;
-  height: 69px;
+  height: 60px;
   padding: 0 24px;
   justify-content: center;
   align-items: center;
   gap: 35px;
-  width: 45%;
+  width: 43%;
   position: relative;
 }
 .num-ticket::after {
@@ -1015,7 +1015,32 @@ padding: 10px 0;
   .vector::after,
   .line,
   .main-title::before,
-  .main-title::after {
+  .main-title::after,
+  .vector1,
+  .vector2,
+  .vector3,
+  .vector4,
+  .vector5,
+  .vector6,
+  .vector7,
+  .line-about::after,
+  .list-about .active::before {
     display: none;
+  }
+  .num-ticket{
+    width: 80%;
+  }
+}
+
+@media (max-width: 867px) {
+  .color-red-banner {
+    font-size: 50px;
+  }
+  .color-white-banner{
+    font-size: 40px;
+  }
+  .bg-involved,
+  .bg-event-details{
+    background-image: none;
   }
 }
