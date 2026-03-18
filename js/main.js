@@ -30,6 +30,33 @@ $('.scroll-top').click(function () {
     });
 });
 
+
+ // involoved
+
+    $(".involoved.owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayhoverpause: true,
+        autoplaytimeout: 100,
+        items: 5,
+        nav: true,
+        loop: true,
+        dots: false,
+        responsive: {
+            0 : {
+                items: 1
+            },
+            485 : {
+                items: 3
+            },
+            728 : {
+                items: 4
+            },
+            1200 : {
+                items: 5
+            }
+        }
+    });
+
 // loading page
 
 $(window).on('load',function(){
